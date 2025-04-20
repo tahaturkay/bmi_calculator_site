@@ -1,0 +1,55 @@
+<!doctype html>
+
+<head>
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bmi.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+    
+</head>
+<h1>Welcome to BMI Calculator</h1>
+<h2>Designed by Taha Turkay Aktaş</h2>
+
+
+<body>
+<div>
+    <p>Enter your height in cm:</p>
+    <form class = "pure-form-aligned" method = "POST" action ="/bmi">
+    <input type="text" name ="height" placeholder="Height""><br>
+    <p>Enter your weight in kg:</p>
+    <input type="text" name ="weight" placeholder="Weight"><br>
+    <button type="submit" class = "pure-button pure-button-primary" value ="Submit">Submit</button>
+    </form>
+</div>
+
+<br>
+
+<div>
+    {% if height %}
+        <p>Your height is: {{ height }} cm</p>
+        <p>Your weight is: {{ weight }} kg</p>
+
+        {% if bmi < 18.5 %}
+            <p>Your BMI is: {{ bmi }}</p>
+            <p>You are underweight</p>
+        {% elif bmi >= 18.5 and bmi < 24.9 %}
+            <p>Your BMI is: {{ bmi }}</p>
+            <p>You are normal weight</p>
+        {% elif bmi >= 24.9 and bmi < 29.9 %}
+            <p>Your BMI is: {{ bmi }}</p>
+            <p>You are overweight</p>
+        {% elif bmi >= 29.9 and bmi < 39.9 %}
+            <p>Your BMI is: {{ bmi }}</p>
+            <p>You have obesity</p>
+        {% elif bmi >= 39.9 %}
+            <p>Your BMI is: {{ bmi }}</p>
+            <p>You have morbid obesity</p>
+        {% endif %}
+    {% endif %}
+</div>
+
+
+
+</body>
+

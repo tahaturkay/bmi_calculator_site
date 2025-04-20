@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+
+}
+input::placeholder {
+    color: #888; /* Placeholder yazı rengi */
+    font-style: italic; /* İsteğe bağlı eğik yazı */
+    text-align: center; /* Yatayda ortalar */
+}
+
+.pure-menu-link {
+    width: 100px; /* Genişlik */
+    height: 25px; /* Yükseklik */
+    font-size: 16px; /* Yazı boyutu */
+    padding: 0px; /* İç boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlatma */
+    background-color: #85a2c2; /* Arkaplan rengi */
+    color: rgb(0, 0, 0); /* Yazı rengi */
+    border: none; /* Çerçeve kaldır */
+    cursor: pointer; /* İmleç değişimi */
+    
+}
+
+.pure-menu-link:hover {
+    background-color: #0056b3; /* Hover rengi */
+}

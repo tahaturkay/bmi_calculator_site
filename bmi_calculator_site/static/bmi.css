@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: whitesmoke
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    color: white;
+    background-image: url("4k-Blue-Abstract-Background-4K-Wallpaper.jpg");
+}
+input::placeholder {
+    color: #888; /* Placeholder yazı rengi */
+    font-style: italic; /* İsteğe bağlı eğik yazı */
+    text-align: center; /* Yatayda ortalar */
+}
