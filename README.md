@@ -41,23 +41,6 @@ python app.py
 Once the application starts, open the following address in your browser to view the application:
 http://127.0.0.1:5000/
 
-7. Project Structure
-
-The project directory is structured as follows:
-bmi_calculator_site/
-│
-├── app.py          # Flask application file
-│
-├── static/         # Static files like CSS, JavaScript, images, etc.
-│   └── style.css   # Homepage style file
-│   └── bmi.css     # BMI style file
-│
-├── templates/      # HTML template files
-│   ├── index.html  # Homepage HTML file
-│   └── bmi.html    # BMI calculation HTML file
-│
-└── venv/           # Virtual environment
-
 Contributing to the Project:
 If you would like to contribute to this project, follow these steps:
 
