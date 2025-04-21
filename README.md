@@ -30,9 +30,6 @@ You need to activate the virtual environment. Use the following commands:
 After activating the virtual environment, install the required dependencies for the project:
 pip install -r requirements.txt
 
-If you don't have a `requirements.txt` file, you can install Flask manually:
-pip install flask
-
 5. Run the Flask Application
 Start the application by running the `app.py` file:
 python app.py
