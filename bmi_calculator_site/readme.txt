@@ -10,7 +10,7 @@ Getting Started:
 
 1. Download the Project
 First, download or clone the project to your computer:
-git clone <repository_url>
+git clone <https://github.com/tahaturkay/bmi_calculator_site>
 
 2. Set Up Virtual Environment
 Navigate to the project directory and create a virtual environment:
@@ -29,9 +29,6 @@ You need to activate the virtual environment. Use the following commands:
 4. Install Required Dependencies
 After activating the virtual environment, install the required dependencies for the project:
 pip install -r requirements.txt
-
-If you don't have a `requirements.txt` file, you can install Flask manually:
-pip install flask
 
 5. Run the Flask Application
 Start the application by running the `app.py` file:
