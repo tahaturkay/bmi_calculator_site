@@ -44,6 +44,7 @@ The project directory is structured as follows:
 bmi_calculator_site/
 │
 ├── app.py          # Flask application file
+├── requirements.txt  # This project requires certain dependencies, such as Flask etc.
 │
 ├── static/         # Static files like CSS, JavaScript, images, etc.
 │   └── style.css   # Homepage style file
