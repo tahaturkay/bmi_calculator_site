@@ -18,19 +18,30 @@ input::placeholder {
     text-align: center; /* Yatayda ortalar */
 }
 
+  
 .pure-menu-link {
-    width: 100px; /* Genişlik */
-    height: 25px; /* Yükseklik */
-    font-size: 16px; /* Yazı boyutu */
-    padding: 0px; /* İç boşluk */
-    border-radius: 5px; /* Köşeleri yuvarlatma */
-    background-color: #85a2c2; /* Arkaplan rengi */
-    color: rgb(0, 0, 0); /* Yazı rengi */
-    border: none; /* Çerçeve kaldır */
-    cursor: pointer; /* İmleç değişimi */
-    
+
+    display: inline-block; /* Butonu içeriğe göre sınırlı tutar */
+    padding: 10px 20px; /* İçerik ve kenar boşluklarını belirler */
+    background-color: #0078e7;
+    border-radius: 5px; /* Kenarları yuvarlaklaştırır */
+    text-decoration: none; /* Link alt çizgisini kaldırır */
+    color: rgb(255, 255, 255) !important;
+    box-sizing: border-box; /* Padding ve border'ı boyut hesaplamasına dahil eder */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Yumuşak geçiş efektleri */
 }
 
 .pure-menu-link:hover {
-    background-color: #0056b3; /* Hover rengi */
+    background-color: #0056b3;
+    color:black !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hover sırasında gölge efekti */
+}
+
+
+.pure-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hareket ve renk değişimini yumuşatır */
 }
