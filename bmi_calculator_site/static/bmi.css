@@ -20,3 +20,31 @@ input::placeholder {
     font-style: italic; /* İsteğe bağlı eğik yazı */
     text-align: center; /* Yatayda ortalar */
 }
+
+.pure-menu-link {
+
+    display: inline-block; /* Butonu içeriğe göre sınırlı tutar */
+    padding: 10px 20px; /* İçerik ve kenar boşluklarını belirler */
+    background-color: #74a5ff;
+    border-radius: 5px; /* Kenarları yuvarlaklaştırır */
+    text-decoration: none; /* Link alt çizgisini kaldırır */
+    color: rgb(0, 0, 0) !important;
+    box-sizing: border-box; /* Padding ve border'ı boyut hesaplamasına dahil eder */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Yumuşak geçiş efektleri */
+}
+
+.pure-menu-link:hover {
+    background-color: #585858;
+    color:black !important;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.61); /* Hover sırasında gölge efekti */
+}
+
+
+.pure-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hareket ve renk değişimini yumuşatır */
+}
+
